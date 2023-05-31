@@ -20,7 +20,7 @@ func validateEmail(email string) bool {
 		return false
 	}
 
-	if match, _ := regexp.MatchString(`[a-z0-9]+@[a-z0-9]+\.[a-z]`, strings.TrimSpace(email)); !match {
+	if match, _ := regexp.MatchString(`[a-z0-9]+@[a-z]+\.[a-z]`, strings.TrimSpace(email)); !match {
 		return false
 	}
 
